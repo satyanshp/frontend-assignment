@@ -2,7 +2,7 @@ import styles from "./page.module.css";
 import Button from './_components/Button';
 import Image from "next/image";
 
-export const getData = async() => {
+const getData = async() => {
   const res = await fetch('https://api.thecatapi.com/v1/images/search?has_breeds=1')
  
   if (!res.ok) {
