@@ -1,0 +1,46 @@
+.main{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.sidebar, .goto{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.goto{
+    background-color: #1B4242;
+}
+
+.goto > div{
+    width: 58%;
+    background-color: #5C8374;
+    padding: 1.5rem;
+    border-radius: 12px;
+    padding-bottom: 2rem;
+    padding-bottom: 0px;
+}
+
+.goto > div > img{
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 900px){
+    .main{
+        flex-direction: column;
+    }
+    .sidebar, .goto{
+        width: 100%;
+    }
+    .sidebar{
+        height: auto;
+        padding-block: 1rem;
+    }
+}
